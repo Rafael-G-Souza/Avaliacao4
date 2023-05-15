@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="../estilos/esqueciSenha.css">
+
+</head>
+<body>
+    <main>
+        <div id="caixa">
+            <div id="formulario">
+                <div id="texto">
+                    <h3>Esqueci a senha</h3><br>
+                    <p>Para redefinir sua senha, selecione uma das formas de recuperação disponíveis abaixo e enviaremos um link com as instruções.</p>
+                </div>
+                <form action="recuperacaoSenha.html" method="post">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" placeholder="exemplo@mail.com" autocomplete="off"><br>
+                    <label type="numero">Celular</label><br>
+                    <input type="tel" id="numero" placeholder="(xx) xxxxx-xxxx" autocomplete="off"><br>
+                    <button type="submit">Próximo</button><br>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

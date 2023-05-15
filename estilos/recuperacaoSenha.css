@@ -1,0 +1,75 @@
+main{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imagens/ImagemBackground\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#caixa{
+    width: 70%;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#formulario{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #25250b9f;
+    box-shadow: 0px 10px 10px 0px black;
+    border-radius: 10px;
+}
+
+#formulario:hover{
+    width: 55%;
+    transition: 0.5s;
+}
+#texto{
+    text-align: justify;
+    margin: 10px;
+    font-weight: normal;
+}
+#texto h3{
+    text-align: center;
+}
+#formulario input{
+    width: 200px;
+    height: 30px;
+    margin:10px 0px;
+}
+
+#formulario button{
+    width: 100px;
+    height: 40px;
+    background-color:rgb(209, 209, 209);
+    border-radius: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+    margin:10px 0px;
+}
+
+#formulario button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+a{
+    color: white;
+}
+
+select{
+    margin: 10px 0px;
+}

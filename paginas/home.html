@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="../estilos/bootstrap.css">
+    <link rel="stylesheet" href="../estilos/home.css">
+    
+</head>
+<body>
+    <div class="container-fluid p-0" id="pagina">
+        <header>
+            <div class="container-fluid d-flex p-0">
+                <div class="container-fluid p-0" id="nomeSite">
+                    <h1>Cantinho do livro</h1>
+                </div>
+                <div class="container-fluid d-flex justify-content-end align-items-center" id="botoesLogin">
+                    <a href="telaCadastro.html"><button type="button" class="rounded mx-3" id="btnCadastrar">CADASTRAR</button></a>
+                    <a href="../index.html"><button type="button" class="rounded" id="btnEntrar">ENTRAR</button></a>
+                </div>
+                
+            </div>
+            <picture>
+                <source media="(max-width: 800px)" srcset="../imagens/menuLateral.jpg">
+                <nav class="navbar navbar-expand p-0"  id="navegacao">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
+                    </ul>
+                    <form action="#">
+                        <input type="search" placeholder="Pesquise">
+                        <button type="submit" class="rounded" id="lupa">
+                            <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
+                        </button>
+                    </form>
+                </nav>
+            </picture>
+        </header>
+        <main>
+            <section class="container-fluid p-0 col-10 bg-white d-flex shadow-lg" >
+                <div class="container-fluid m-0 p-0 shadow" id="separacao">
+                    <h3>Filtros</h3>
+                    <div class="container-fluid p-0 ps-2 m-0">
+                        <h5>Categoria</h5>
+                        <form action="#" class="formCategorias" id="categorias">
+                            <input type="checkbox"><span>Autoajuda</span><br>
+                            <input type="checkbox"><span>Literatura Infanto-Juvenil</span><br>
+                            <input type="checkbox"><span>Religião e Espiritualidade</span><br>
+                            <input type="checkbox"><span>Gastronomia</span><br>
+                            <input type="checkbox"><span>Direito</span><br>
+                            <input type="checkbox"><span>Psicologia</span><br>
+                            <input type="checkbox"><span>Ficcção Científica e Fantasia</span><br>
+                            <input type="checkbox"><span>Policial e Suspense</span><br>
+                            <input type="checkbox"><span>Romance</span><br>
+                            <input type="checkbox"><span>Poesia</span><br>
+                            <input type="checkbox"><span>Terror</span><br>
+                            <input type="checkbox"><span>Sociologia</span><br>
+                            <input type="checkbox"><span>HQ's e Mangás</span><br>
+                            <input type="checkbox"><span>Artes</span><br>
+                        </form>
+                    </div><br>
+                    <div class="container-fluid p-0 ps-2 m-0">
+                        <h5>Ano</h5>
+                        <form action="#" class="formAno" id="anos">
+                            <input type="checkbox"><span>2023</span><br>
+                            <input type="checkbox"><span>2022</span><br>
+                            <input type="checkbox"><span>2021</span><br>
+                            <input type="checkbox"><span>2020</span><br>
+                            <input type="checkbox"><span>2019</span><br>
+                            <input type="checkbox"><span>2018</span><br>
+                            <input type="checkbox"><span>2017</span><br>
+                            <input type="checkbox"><span>2016</span><br>
+                            <input type="checkbox"><span>2015</span><br>
+                            <input type="checkbox"><span>2014</span><br>
+                            <input type="checkbox"><span>2013</span><br>
+                            <input type="checkbox"><span>2012</span><br>
+                            <input type="checkbox"><span>2010</span><br>
+                            <input type="checkbox"><span>2009</span><br>
+                            <input type="checkbox"><span>2008</span><br>
+                            <input type="checkbox"><span>2007</span><br>
+                            <input type="checkbox"><span>2006</span><br>
+                            <input type="checkbox"><span>2005</span><br>
+                            <input type="checkbox"><span>2004</span><br>
+                            <input type="checkbox"><span>2003</span><br>
+                            <input type="checkbox"><span>2002</span><br>
+                            <input type="checkbox"><span>2001</span><br>
+                            <input type="checkbox"><span>2000</span><br>
+                            <input type="checkbox"><span>1999</span><br>
+                            <input type="checkbox"><span>1998</span><br>
+                            <input type="checkbox"><span>1997</span><br>
+                            <input type="checkbox"><span>1996</span><br>
+                            <input type="checkbox"><span>1995</span><br>
+                            <input type="checkbox"><span>1994</span><br>
+                        </form>
+                    </div><br>
+                    <div class="container col-12" id="propaganda">
+                        <div class="carousel slide" id="demoUm"data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#demoUm" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#demoUm" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#demoUm" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner" id="propUm">
+                                <div class="carousel-item active"></div>
+                                <div class="carousel-item" id="propDois"></div>   
+                                <div class="carousel-item " id="propTres"></div> 
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demoUm" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demoUm" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-fluid p-0 m-0 text-center" id="conteudo">
+                    <div class="container col-10" id="banner">
+                        <div class="carousel slide" id="demoDois"data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#demoDois" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#demoDois" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#demoDois" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner" id="imagemUm">
+                                <div class="carousel-item active"></div>
+                                <div class="carousel-item" id="imagemDois"></div>   
+                                <div class="carousel-item " id="imagemTres"></div> 
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demoDois" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demoDois" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <h1>Mais vendidos</h1>
+                    <div class="container p-0 m-0 d-flex gap-1 flex-wrap justify-content-center">
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros"> 
+                                <img src="../imagens/Mais esperto que o Diabo.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Mais esperto que o Diabo - Napoleon Hill</p>
+                                <p class="precoAntes">R$ 49,90</p>
+                                <p class="promocao">R$ 39,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/as 5 linguagens do amor para crianças.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">As 5 Linguagens do Amor para Crianças - Gary Chapman & Ross Campbell</p>
+                                <p class="precoAntes">R$ 29,90</p>
+                                <p class="promocao">R$ 19,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Avaliação psicologica no contexto forense.webp" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Avaliação Psicológica no Contexto Forense - ArtMed</p>
+                                <p class="precoAntes">R$ 109,90</p>
+                                <p class="promocao">R$ 89,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            
+                            <div class="imagensLivros">
+                                <img src="../imagens/Historia da ciade - perspectiva.webp" style="width: 100%" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">História da Cidade - Perspectiva - Leonardo Benevolo</p>
+                                <p class="precoAntes">R$ 29,90</p>
+                                <p class="promocao">R$ 19,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Mindset-a nova psicologia do sucesso.webp" style="width: 100%" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Mindset - A Nova Psicologia do Sucesso - Carol S. Dweck</p>
+                                <p class="precoAntes">R$ 24,90</p>
+                                <p class="promocao">R$ 16,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/The walking dead - vol.13.webp" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">The Walking Dead - Vol.13 - Roberth Kirkman</p>
+                                <p class="precoAntes">R$ 19,90</p>
+                                <p class="promocao">R$ 9,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Do Mil ao Milhão. Sem Cortar o Cafezinho..jpg"  alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Do Mil ao Milhão - Tiago Nigro</p>
+                                <p class="precoAntes">R$ 29,90</p>
+                                <p class="promocao">R$ 19,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Micro-hábitos.jpg"  alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Micro-hábitos - Bj. Fogg</p>
+                                <p class="precoAntes">R$ 19,90</p>
+                                <p class="promocao">R$ 16,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/O homem mais rico da Babilônia.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">O Homem Mais Rico da Babilônia - George S. Clason</p>
+                                <p class="precoAntes">R$ 29,90</p>
+                                <p class="promocao">R$ 22,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Pai Rico, Pai Pobre - Edição de 20 anos atualizada e ampliada - O que os ricos ensinam a seus filhos sobre dinheiro.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Pai Rico, Pai Pobre - Roberth T. Kyosaki</p>
+                                <p class="precoAntes">R$ 19,90</p>
+                                <p class="promocao">R$ 15,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/12 regras para vida.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">12 Regras para Vida - Jordan Peterson</p>
+                                <p class="precoAntes">R$ 39,90</p>
+                                <p class="promocao">R$ 29,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/A Biblioteca da Meia-Noite.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">A Biblioteca da Meia-noite - Matt Haig</p>
+                                <p class="precoAntes">R$ 19,90</p>
+                                <p class="promocao">R$ 12,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/a garota do lago.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">A Garota no Lago - Charlie Donlea</p>
+                                <p class="precoAntes">R$ 19,90</p>
+                                <p class="promocao">R$ 9,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/A paciente silenciosa.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">A Paciente Silenciosa - Alex Michaelides</p>
+                                <p class="precoAntes">R$ 29,90</p>
+                                <p class="promocao">R$ 19,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Café com Deus Pai- Porções Diárias de Renovação.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Café com Deus Pai - Junior Rostirola</p>
+                                <p class="precoAntes">R$ 16,90</p>
+                                <p class="promocao">R$ 12,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Como fazer amigos e influenciar pessoas.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Como Fazer Amigos e Influenciar Pessoas - Dale Carnegie</p>
+                                <p class="precoAntes">R$ 39,90</p>
+                                <p class="promocao">R$ 29,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Pré-Escrita - Coleção Aprenda em Casa.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Pré-escrita - Aprenda em Casa</p>
+                                <p class="precoAntes">R$ 15,90</p>
+                                <p class="promocao">R$ 9,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/A revolução dos bichos.jpg"  alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">A Revolução do Binhos - George Orwell</p>
+                                <p class="precoAntes">R$ 9,90</p>
+                                <p class="promocao">R$ 7,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+
+                    </div>
+                   
+                </div>
+                
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
