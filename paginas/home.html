@@ -21,11 +21,9 @@
                     <a href="telaCadastro.html"><button type="button" class="rounded mx-3" id="btnCadastrar">CADASTRAR</button></a>
                     <a href="../index.html"><button type="button" class="rounded" id="btnEntrar">ENTRAR</button></a>
                 </div>
-                
             </div>
-            <picture>
-                <source media="(max-width: 800px)" srcset="../imagens/menuLateral.jpg">
                 <nav class="navbar navbar-expand p-0"  id="navegacao">
+                    <div id="telaMenorBotao"></div>
                     <ul class="navbar-nav">
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
@@ -40,7 +38,16 @@
                         </button>
                     </form>
                 </nav>
-            </picture>
+                <div id="telaMenor">
+                    <div id="fecharTelaMenor"></div>
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
+                    </ul>
+                </div>
         </header>
         <main>
             <section class="container-fluid p-0 col-10 bg-white d-flex shadow-lg" >
@@ -186,7 +193,7 @@
                         <div class="container col-2" id="livros">
                             
                             <div class="imagensLivros">
-                                <img src="../imagens/Historia da ciade - perspectiva.webp" style="width: 100%" alt="" srcset="">
+                                <img src="../imagens/Historia da ciade - perspectiva.webp" alt="" srcset="">
                             </div>
                             <div class="nomePreco">
                                 <p class="nomeDoLivro">História da Cidade - Perspectiva - Leonardo Benevolo</p>
@@ -199,7 +206,7 @@
                         </div>
                         <div class="container col-2" id="livros">
                             <div class="imagensLivros">
-                                <img src="../imagens/Mindset-a nova psicologia do sucesso.webp" style="width: 100%" alt="" srcset="">
+                                <img src="../imagens/Mindset-a nova psicologia do sucesso.webp" alt="" srcset="">
                             </div>
                             <div class="nomePreco">
                                 <p class="nomeDoLivro">Mindset - A Nova Psicologia do Sucesso - Carol S. Dweck</p>
@@ -389,5 +396,6 @@
         <footer></footer>
     </div>
     <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
