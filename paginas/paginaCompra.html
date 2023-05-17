@@ -8,28 +8,57 @@
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/bootstrap.css">
     <link rel="stylesheet" href="../estilos/paginaCompra.css">
+    <link rel="stylesheet" href="../estilos/styleResponsividade.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px)">
 </head>
 <body>
     <header>
-        <h1>Cantinho do livro</h1>
-        <nav class="navbar navbar-expand p-0"  id="navegacao">
-            <ul class="navbar-nav">
-                <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
-            </ul>
-            <form action="#">
-                <input type="search" placeholder="Pesquise">
-                <button type="submit">
-                    <img src="../imagens/lupa.png" style="width: 20px;" alt="" srcset="">
-                </button>
-            </form>
-        </nav>
+        <div class="container-fluid d-flex p-0">
+            <div class="container-fluid p-0" id="nomeSite">
+                <h1>Cantinho do livro</h1>
+            </div>
+            <div class="container-fluid d-flex justify-content-end align-items-center" id="botoesLogin">
+                <a href="telaCadastro.html"><button type="button" class="rounded mx-3" id="btnCadastrar">CADASTRAR</button></a>
+                <a href="../index.html"><button type="button" class="rounded" id="btnEntrar">ENTRAR</button></a>
+            </div>
+        </div>
+            <nav class="navbar navbar-expand p-0"  id="navegacao">
+                <div id="telaMenorBotao"></div>
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
+                </ul>
+                <form action="#">
+                    <input type="search" placeholder="Pesquise">
+                    <button type="submit" class="rounded" id="lupa">
+                        <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
+                    </button>
+                </form>
+            </nav>
+            <div id="telaMenor">
+                <div id="fecharTelaMenor"></div>
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
+                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
+                    <li>
+                        <form action="#">
+                            <input type="search" placeholder="Pesquise">
+                            <button type="submit" class="rounded" id="lupa">
+                                <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
     </header>
     <main>
-        <div class="container col-5 rounded d-flex justify-content-center" id="caixa">
+        <div class="container col-5 rounded d-flex justify-content-center m-0 p-0" id="caixa">
                 <form action="../paginas/finalizacaoCompra.html" method="post" id="compra">
                     <div class="container d-flex justify-content-center">
                         <h3>Finalizar compra</h3>
@@ -78,5 +107,6 @@
                 </form> 
         </div>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>

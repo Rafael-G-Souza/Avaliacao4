@@ -9,7 +9,6 @@ function showMenu(){
     telaMenorBotao.style.display = "none"
     telaMenor.style.display = "flex"
     telaMenor.style.flexFlow = "column"
-    telaMenor.style.transition = "1s"
 }
 function closeMenu(){
     telaMenor.style.display = "none"

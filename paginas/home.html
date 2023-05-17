@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/bootstrap.css">
     <link rel="stylesheet" href="../estilos/home.css">
+    <link rel="stylesheet" href="../estilos/styleResponsividade.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px)">
+
     
 </head>
 <body>
@@ -46,11 +49,19 @@
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
+                        <li>
+                            <form action="#">
+                                <input type="search" placeholder="Pesquise">
+                                <button type="submit" class="rounded" id="lupa">
+                                    <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
+                                </button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
         </header>
         <main>
-            <section class="container-fluid p-0 col-10 bg-white d-flex shadow-lg" >
+            <section class="container-fluid p-0 col-10 d-flex rounded">
                 <div class="container-fluid m-0 p-0 shadow" id="separacao">
                     <h3>Filtros</h3>
                     <div class="container-fluid p-0 ps-2 m-0">

@@ -1,0 +1,37 @@
+    #categorias{
+        font-size: small;
+        white-space: nowrap;
+    }
+    #categorias input{
+        width: 10px;
+    }
+    #anos{
+        font-size: small;
+    }
+    #anos input{
+        width: 10px;
+    }
+     #propUm{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #propDois{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+    }
+    #propTres{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #navegacao{
+        font-size: small;
+    }
+    #caixa{
+        width: auto;
+    }
+    section div label, section div input, section div select{
+        width: 70px;
+        font-size: small;
+
+    }
