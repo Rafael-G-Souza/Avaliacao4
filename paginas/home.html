@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../estilos/bootstrap.css">
     <link rel="stylesheet" href="../estilos/home.css">
     <link rel="stylesheet" href="../estilos/styleResponsividade.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px)">
+    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px & min-width: 801px)">
 
     
 </head>
@@ -40,6 +40,11 @@
                             <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
                         </button>
                     </form>
+                    <form action="#">
+                        <button type="submit" class="rounded" id="carrinho">
+                            <img src="../imagens/iconCarrinho.png" style="width: 30px;" alt="carrinho" srcset="">
+                        </button>
+                    </form>
                 </nav>
                 <div id="telaMenor">
                     <div id="fecharTelaMenor"></div>
@@ -49,11 +54,17 @@
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
-                        <li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Carrinho</a></li>
+                        <li class="container d-flex flex-row">
                             <form action="#">
                                 <input type="search" placeholder="Pesquise">
-                                <button type="submit" class="rounded" id="lupa">
+                                <button type="submit" id="lupa">
                                     <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
+                                </button>
+                            </form>
+                            <form action="#">
+                                <button type="submit" class="rounded" id="carrinho">
+                                    <img src="../imagens/iconCarrinho.png" style="width: 30px;" alt="carrinho" srcset="">
                                 </button>
                             </form>
                         </li>
@@ -399,12 +410,20 @@
                         </div>
 
                     </div>
+                    <div class="container-fluid my-2">
+                        <a href="#"><p>Próxima página -></p></a>
+                    </div>
                    
                 </div>
                 
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="container-fluid bg-dark">
+                <p class="text-white text-center">Todos os direitos reservados</p>
+
+            </div>
+        </footer>
     </div>
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/script.js"></script>

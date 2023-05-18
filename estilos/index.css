@@ -21,7 +21,7 @@ main{
 }
 #cadastro{
     width: 50%;
-    height: 500px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -88,4 +88,37 @@ a{
 a:hover{
     color:gold;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 800px){
+    #caixa{
+        display: flex;
+        flex-direction: column;
+    }
+    #cadastro{
+        width: 100%;
+        height: 50%;
+        font-size: small;
+    }
+    #cadastro button{
+        font-size: small;
+        width: 80%;
+        height: 30px;
+    }
+    #formulario{
+        width: 100%;
+        height: 50%;
+        font-size: small;
+    }
+    #formulario button{
+        font-size: small;
+        width: 80%;
+        height: 30px;
+    }
+    #cadastro:hover{
+        width: 100%;
+    }
+    #formulario:hover{
+        width: 100%;
+    }
 }

@@ -84,3 +84,41 @@ main{
 a{
     color: white;
 }
+@media screen and (max-width: 800px){
+    #caixa{
+        display: flex;
+        flex-direction: column;
+    }
+    #cadastro{
+        width: 100%;
+        height: 30%;
+        font-size: small;
+    }
+    #cadastro:hover{
+        width: 100%;
+    }
+    #formulario:hover{
+        width: 100%;
+    }
+    #cadastro button{
+        font-size: small;
+        width: 80%;
+        height: 30px;
+    }
+    #formulario{
+        width: 100%;
+        height: 70%;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+    }
+    #formulario button{
+        font-size: small;
+        width: 80%;
+        height: 30px;
+    }
+    #formulario input{
+        height: 20px;
+    }
+    };
+
