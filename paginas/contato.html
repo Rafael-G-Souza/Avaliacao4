@@ -7,9 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/bootstrap.css">
-    <link rel="stylesheet" href="../estilos/paginaCompra.css">
+    <link rel="stylesheet" href="../estilos/contato.css">
     <link rel="stylesheet" href="../estilos/styleResponsividade.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px)">
 </head>
 <body>
     <header>
@@ -73,49 +72,36 @@
         <div class="container col-5 rounded d-flex justify-content-center m-0 p-0" id="caixa">
                 <form action="../paginas/finalizacaoCompra.html" method="post" id="compra">
                     <div class="container m-0 d-flex justify-content-center">
-                        <h3>Finalizar compra</h3>
+                        <h3>Contate-nos</h3>
                     </div>
                     <section class="container m-0 p-0 d-flex flex-row">
                         <div class="container m-0 p-2">
-                            <label for="cartao">Número do cartão</label><br>
-                            <input type="number" id="cartao"><br>
-                            <label for="nome">Nome no cartão</label><br>
+                           <h3>Localização</h3><br>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p><br>
+                           <div class="container m-0 p-2">
+                                <h3>Siga-nos</h3>
+                                <div class="container" id="iconesSociais">
+                                    <img src="../imagens/iconesFace.jpg" style="width:40px; height:40px" class="rounded m-1" alt="" srcset="">
+                                    <img src="../imagens/iconesTwitter.jpg" style="width:40px; height:40px" class="rounded m-1" alt="" srcset="">
+                                    <img src="../imagens/iconesYoutube.jpg" style="width:40px; height:40px" class="rounded m-1" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-0 p-2">
+                            <label for="endereco">Nome</label><br>
                             <input type="text" id="nome"><br>
-                            <label for="parcelas">Número de parcelas</label><br>
-                            <select name="parcelas" id="parcelas">
-                                <option value="unica">1x</option>
-                                <option value="duas">2x</option>
-                                <option value="tres">3x</option>
-                                <option value="quatro">4x</option>
-                            </select><br>
-                        </div>
-                        <div class="container m-0 p-2">
-                            <label for="cvv">CVV</label><br>
-                            <input type="number" id="cvv"><br>
-                            <label for="validade">Validade</label><br>
-                            <input type="month" id="validade"><br>
-                            
+                            <label for="email">E-mail</label><br>
+                            <input type="email" id="email"><br>
+                            <label for="assunto">Assunto</label><br>
+                            <input type="text" id="assunto"><br>
+                            <label for="mensagem">Mensagem</label><br>
+                            <input type="text" id="mensagem"><br>
+                            <div class="container m-0 p-0 d-flex justify-content-center">
+                                <button type="submit" class="my-2 rounded py-1">Enviar</button>
+                            </div>
                         </div>
                     </section>
-                    <section class="container m-0 p-0 d-flex flex-row">
-                        <div class="container m-0 p-2">
-                            <label for="cep">CEP</label><br>
-                            <input type="number" id="cep"><br>
-                            <label for="numero">Nº</label><br>
-                            <input type="number" id="numero"><br>
-                            <label for="telefone">Telefone/Celular</label><br>
-                            <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" autocomplete="off"><br>
-                        </div>
-                        <div class="container m-0 p-2">
-                            <label for="endereco">Endereço</label><br>
-                            <input type="text" id="endereco"><br>
-                            <label for="bairro">Bairro</label><br>
-                            <input type="text" id="bairro"><br>
-                        </div>
-                    </section>
-                    <div class="container m-0 p-0 d-flex justify-content-center">
-                        <button type="submit" class="my-2 rounded col-6 py-1">Finalizar pedido</button>
-                    </div>
+                    
                 </form> 
         </div>
     </main>

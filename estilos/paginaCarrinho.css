@@ -1,0 +1,259 @@
+main{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imagens/ImagemBackground\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+#cartao{
+    width: 250px;
+}
+#cvv{
+    width: 50px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#caixa{
+    background-color: #25250b9f;
+    color: white;
+    font-weight:bolder;
+    box-shadow: 0px 10px 10px 0px black;
+}
+@media screen and (max-width: 500px) {
+    section div input{
+        width: 70px;
+    }
+    #cartao{
+        width: 180px;
+    }
+    
+    
+}
+#livros{
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.534);
+    margin: 5px;
+    width: 180px;
+    height: auto;
+
+}
+#livros:hover{
+    transition: 0.5s;
+    box-shadow: 0px 30px 30px 0px black;
+}
+.imagensLivros img{
+    width: 100%;
+    height: 200px;
+}
+
+#livros button{
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+#livros button:hover{
+    background-color: black;
+    color: white;
+}
+
+.nomeDoLivro{
+    margin: 0%;
+    font-size: smaller;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+.nomePreco{
+    height: 110px;
+}
+.precoAntes{
+    margin: 0%;
+    text-align: left;
+    font-size: smaller;
+    text-decoration: line-through;
+    color: gray;
+    font-size: small;
+}
+.promocao{
+    font-size: small;
+    font-weight: bold;
+}
+
+#verMais button{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+#verMais button:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width:800px) {
+    header{
+        height: auto;
+    }
+    #conteudo{
+        width: 100%;
+    }
+    #banner{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #imagemUm{
+        height: 150px;
+    }
+    #imagemDois{
+        height: 150px;
+    }
+    #imagemTres{
+        height: 150px;
+    }
+    #separacao{
+        display: none;
+    }
+    #navegacao ul , #navegacao form{
+        display: none;
+    }
+    #navegacao{
+        width: 100%;
+    }
+    #telaMenor{
+        background-color: aliceblue;
+    }
+    #telaMenor li:hover{
+        background-color: gray;
+    }
+    #telaMenorBotao{
+        background-image: url("../imagens/menuLateral.jpg");
+        background-size: 20px;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 100%;
+    }
+    #fecharTelaMenor{
+        background-image: url("../imagens/menuLateral.jpg");
+        background-size: 20px;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        background-color: aliceblue;
+        border: black solid 1px;
+    }
+    #telaMenor ul li form{
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    #telaMenor ul li form input{
+        width: 100px;
+    }
+    #botoesLogin button{
+        width: 70px;
+        height: 20px; 
+    }
+    #btnEntrar{
+        font-size: 8pt;
+    }
+    #btnCadastrar{
+        font-size: 8pt;
+    }
+    #nomeSite h1{
+        text-align: left;
+        font-size: larger;
+        vertical-align: middle;
+    }
+    #livros{
+        width: 20%;
+        height: 180px;
+
+    }
+    #livros img{
+        width: auto;
+        height: 100px;
+    }
+    #livros button{
+        font-size: 10pt;
+        height: 25px;
+    }
+    .nomePreco{
+        font-size: 10pt;
+        height: 50px;
+    }
+    .nomeDoLivro{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    
+    }
+    .precoAntes{
+        font-size: 8pt;
+    }
+    .promocao{
+        font-size: 8pt;
+    }
+    #caixa{
+        width:auto;
+        display: flex;
+        flex-wrap:wrap ;
+    }
+    section div label, section div input, section div select, div h3, div p, div button{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width: 580px) {
+    #livros{
+        width: 90px;
+        height: 180px;
+    }
+    #livros img{
+        width: auto;
+        height: 90px;
+    }
+    #livros button{
+        font-size: 8pt;
+        height: 25px;
+    }
+    .nomePreco{
+        font-size: 8pt;
+        height: 50px;
+    }
+    .nomeDoLivro{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .precoAntes{
+        font-size: 8pt;
+    }
+    .promocao{
+        font-size: 8pt;
+    }
+    h3{
+        font-size: 12pt;
+    }
+    h4{
+        font-size: 10pt;
+    }
+    #verMais button{
+        width: 80px;
+        height: 30px;
+    }
+}

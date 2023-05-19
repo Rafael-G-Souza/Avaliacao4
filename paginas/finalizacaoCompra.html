@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../estilos/bootstrap.css">
     <link rel="stylesheet" href="../estilos/finalizacaoCompra.css">
     <link rel="stylesheet" href="../estilos/styleResponsividade.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px & min-width: 801px)">
+    <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px) and (min-width: 801px)">
 </head>
 <body>
     <header>
@@ -25,11 +25,12 @@
             <nav class="navbar navbar-expand p-0"  id="navegacao">
                 <div id="telaMenorBotao"></div>
                 <ul class="navbar-nav">
-                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
+                    <li class="navbar-item"><a href="../paginas/home.html" class="nav-link text-dark">Mais vendidos</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
+                    <li class="navbar-item"><a href="contato.html" class="nav-link text-dark">Contate-nos</a></li>
                 </ul>
                 <form action="#">
                     <input type="search" placeholder="Pesquise">
@@ -37,20 +38,31 @@
                         <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
                     </button>
                 </form>
+                <form action="paginaCarrinho.html">
+                    <button type="submit" class="rounded mx-2" id="carrinho">
+                        <img src="../imagens/iconCarrinho.png" style="width: 30px;" alt="carrinho" srcset="">
+                    </button>
+                </form>
             </nav>
             <div id="telaMenor">
                 <div id="fecharTelaMenor"></div>
                 <ul class="navbar-nav">
-                    <li class="navbar-item"><a href="#" class="nav-link text-dark">Mais vendidos</a></li>
+                    <li class="navbar-item"><a href="home.html" class="nav-link text-dark">Mais vendidos</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Livros em oferta</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">E-Books</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
-                    <li>
+                    <li class="navbar-item"><a href="contato.html" class="nav-link text-dark">Contate-nos</a></li>
+                    <li class="container d-flex flex-row justify-content-around">
                         <form action="#">
                             <input type="search" placeholder="Pesquise">
                             <button type="submit" class="rounded" id="lupa">
                                 <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
+                            </button>
+                        </form>
+                        <form action="../paginas/paginaCarrinho.html">
+                            <button type="submit" class="rounded" id="carrinho">
+                                <img src="../imagens/iconCarrinho.png" style="width: 30px;" alt="carrinho" srcset="">
                             </button>
                         </form>
                     </li>

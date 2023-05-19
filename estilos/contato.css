@@ -1,0 +1,58 @@
+main{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imagens/ImagemBackground\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+#cartao{
+    width: 250px;
+}
+#cvv{
+    width: 50px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#caixa{
+    background-color: #25250b9f;
+    color: white;
+    font-weight:bolder;
+    box-shadow: 0px 10px 10px 0px black;
+    height: 450px;
+}
+#mensagem{
+    height: 50%;
+}
+@media screen and (max-width: 1250px){
+    #navegacao{
+        font-size: small;
+    }
+    #caixa{
+        width: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    section div input{
+        width: 70px;
+    }
+    #cartao{
+        width: 180px;
+    }
+    #caixa{
+        width: auto;
+
+    }
+    section div label, section div input, section div select{
+        width: 100px;
+        font-size: small;
+
+    }
+    
+    
+}

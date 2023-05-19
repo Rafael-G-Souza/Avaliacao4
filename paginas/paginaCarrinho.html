@@ -7,8 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/bootstrap.css">
-    <link rel="stylesheet" href="../estilos/paginaCompra.css">
-    <link rel="stylesheet" href="../estilos/styleResponsividade.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="../estilos/paginaCarrinho.css">
     <link rel="stylesheet" href="../estilos/responsividadeDois.css" media="screen and (max-width: 1250px)">
 </head>
 <body>
@@ -38,8 +37,8 @@
                         <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
                     </button>
                 </form>
-                <form action="paginaCarrinho.html">
-                    <button type="submit" class="rounded mx-2" id="carrinho">
+                <form action="#">
+                    <button type="submit" class="rounded" id="carrinho">
                         <img src="../imagens/iconCarrinho.png" style="width: 30px;" alt="carrinho" srcset="">
                     </button>
                 </form>
@@ -53,72 +52,76 @@
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Lançamentos</a></li>
                     <li class="navbar-item"><a href="#" class="nav-link text-dark">Pré-venda</a></li>
                     <li class="navbar-item"><a href="contato.html" class="nav-link text-dark">Contate-nos</a></li>
-                    <li class="container d-flex flex-row justify-content-around">
+                    <li>
                         <form action="#">
                             <input type="search" placeholder="Pesquise">
                             <button type="submit" class="rounded" id="lupa">
                                 <img src="../imagens/lupa.png" style="width: 20px;" alt="lupa" srcset="">
                             </button>
                         </form>
-                        <form action="paginaCarrinho.html">
-                            <button type="submit" class="rounded" id="carrinho">
-                                <img src="../imagens/iconCarrinho.png" style="width: 30px;" alt="carrinho" srcset="">
-                            </button>
-                        </form>
                     </li>
                 </ul>
             </div>
     </header>
-    <main>
-        <div class="container col-5 rounded d-flex justify-content-center m-0 p-0" id="caixa">
-                <form action="../paginas/finalizacaoCompra.html" method="post" id="compra">
+        <main>
+            <div class="container col-5 rounded d-flex justify-content-center flex-column m-0 p-0" id="caixa">
+                <form action="../paginas/paginaCompra.html" method="post" id="compra">
                     <div class="container m-0 d-flex justify-content-center">
-                        <h3>Finalizar compra</h3>
+                        <h3>Carrinho de compras</h3>
                     </div>
-                    <section class="container m-0 p-0 d-flex flex-row">
-                        <div class="container m-0 p-2">
-                            <label for="cartao">Número do cartão</label><br>
-                            <input type="number" id="cartao"><br>
-                            <label for="nome">Nome no cartão</label><br>
-                            <input type="text" id="nome"><br>
-                            <label for="parcelas">Número de parcelas</label><br>
-                            <select name="parcelas" id="parcelas">
-                                <option value="unica">1x</option>
-                                <option value="duas">2x</option>
-                                <option value="tres">3x</option>
-                                <option value="quatro">4x</option>
-                            </select><br>
+                    <section class="container m-0 p-0">
+                        <h4>Seu carrinho de compras está vazio.</h4><br>
+                    </section>
+                    <p>Outras pessoas estão comprando:</p>
+                    <section class="container p-0 m-0 d-flex gap-1 flex-wrap justify-content-center">
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros"> 
+                                <img src="../imagens/Mais esperto que o Diabo.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Mais esperto que o Diabo - Napoleon Hill</p>
+                                <p class="precoAntes">R$ 49,90</p>
+                                <p class="promocao">R$ 39,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
                         </div>
-                        <div class="container m-0 p-2">
-                            <label for="cvv">CVV</label><br>
-                            <input type="number" id="cvv"><br>
-                            <label for="validade">Validade</label><br>
-                            <input type="month" id="validade"><br>
-                            
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/as 5 linguagens do amor para crianças.jpg" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">As 5 Linguagens do Amor para Crianças - Gary Chapman & Ross Campbell</p>
+                                <p class="precoAntes">R$ 29,90</p>
+                                <p class="promocao">R$ 19,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                        <div class="container col-2" id="livros">
+                            <div class="imagensLivros">
+                                <img src="../imagens/Avaliação psicologica no contexto forense.webp" alt="" srcset="">
+                            </div>
+                            <div class="nomePreco">
+                                <p class="nomeDoLivro">Avaliação Psicológica no Contexto Forense - ArtMed</p>
+                                <p class="precoAntes">R$ 109,90</p>
+                                <p class="promocao">R$ 89,90</p>
+                            </div>
+                            <form action="paginaCompra.html">
+                                <button type="submit">Comprar</button>
+                            </form>
                         </div>
                     </section>
-                    <section class="container m-0 p-0 d-flex flex-row">
-                        <div class="container m-0 p-2">
-                            <label for="cep">CEP</label><br>
-                            <input type="number" id="cep"><br>
-                            <label for="numero">Nº</label><br>
-                            <input type="number" id="numero"><br>
-                            <label for="telefone">Telefone/Celular</label><br>
-                            <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" autocomplete="off"><br>
-                        </div>
-                        <div class="container m-0 p-2">
-                            <label for="endereco">Endereço</label><br>
-                            <input type="text" id="endereco"><br>
-                            <label for="bairro">Bairro</label><br>
-                            <input type="text" id="bairro"><br>
-                        </div>
-                    </section>
-                    <div class="container m-0 p-0 d-flex justify-content-center">
-                        <button type="submit" class="my-2 rounded col-6 py-1">Finalizar pedido</button>
+                    <div class="container-fluid d-flex justify-content-center my-2" id="verMais">
+                        <form action="../paginas/home.html">
+                            <button type="submit">Ver mais</button>
+                        </form>
                     </div>
                 </form> 
-        </div>
-    </main>
+            </div>
+        </main>
     <script src="../js/script.js"></script>
 </body>
 </html>
