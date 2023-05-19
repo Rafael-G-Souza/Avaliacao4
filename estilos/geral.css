@@ -67,3 +67,10 @@ nav ul li:hover{
 #telaMenor{
     display: none;
 }
+#carrinho:hover{
+    width: 35px;
+    height: 35px;
+}
+footer div{
+    height: 50px;
+}

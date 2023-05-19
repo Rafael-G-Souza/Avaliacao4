@@ -84,7 +84,7 @@ main{
 a{
     color: white;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 955px){
     #caixa{
         display: flex;
         flex-direction: column;
